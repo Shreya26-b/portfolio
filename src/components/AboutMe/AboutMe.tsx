@@ -6,6 +6,7 @@ import {
   FaJs,
   FaBootstrap,
   // FaPython,
+  FaGitSquare,
   FaDatabase,
   FaGithub,
 } from "react-icons/fa";
@@ -86,6 +87,7 @@ const AboutMe: React.FC = () => {
           <Skill icon={<SiVercel />} label="Vercel" />
           <Skill icon={<SiNetlify />} label="Netlify" />
           <Skill icon={<FaGithub />} label="GitHub" />
+          <Skill icon={<FaGitSquare />} label="Git" />
         </SkillCard>
 
         {/* Productivity */}

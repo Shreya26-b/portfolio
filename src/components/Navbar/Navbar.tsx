@@ -1,7 +1,20 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 
 const Navbar: React.FC = () => {
   const [open, setOpen] = useState(false);
+  useEffect(() => {
+  const handleScroll = () => {
+    setOpen(false);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
+  return () => {
+    window.removeEventListener("scroll", handleScroll);
+  };
+}, []);
+
 
   return (
     <nav className="fixed top-0 w-full h-16 px-[5%] flex items-center justify-between bg-[#C2A889] z-50">
@@ -9,7 +22,7 @@ const Navbar: React.FC = () => {
       <div>
         <ul className="flex items-center gap-6">
           <li>
-            <a href="#home" className="cursor-pointer font-bold text-[#FFFFFF]">
+            <a href="#home" onClick={() => setOpen(false)} className="cursor-pointer font-bold text-[#FFFFFF]">
               Home
             </a>
           </li>
@@ -50,40 +63,41 @@ const Navbar: React.FC = () => {
         </button>
 
         {/* Mobile Menu Button */}
-        <button className="sm:hidden text-2xl" onClick={() => setOpen(!open)}>
+        <button className="sm:hidden text-2xl cursor-pointer" onClick={() => setOpen(!open)}>
           ☰
         </button>
 
         {/* Mobile Dropdown */}
         {open && (
-          <div className="absolute right-0 top-12 w-40 bg-white rounded-xl shadow-lg flex flex-col overflow-hidden sm:hidden">
-            <span>
-              <a
-                href="#skills"
-                className="px-4 py-3 cursor-pointer text-[#6b5b5b] hover:bg-black/5"
-              >
-                Skills
-              </a>
-            </span>
-            <span>
-              <a
-                href="#projects"
-                className="px-4 py-3 cursor-pointer text-[#6b5b5b] hover:bg-black/5"
-              >
-                Projects
-              </a>
-            </span>
+  <div className="absolute right-0 top-14 w-52 bg-white rounded-2xl shadow-xl flex flex-col py-3 sm:hidden">
+    
+    <a
+      href="#skills"
+      onClick={() => setOpen(false)}
+      className="px-6 py-4 text-base font-medium text-[#3b2a23] hover:bg-[#f3e8da] transition"
+    >
+      Skills
+    </a>
 
-            <span>
-              <a
-                href="#experience"
-                className="px-4 py-3 cursor-pointer text-[#6b5b5b] hover:bg-black/5"
-              >
-                Experience
-              </a>
-            </span>
-          </div>
-        )}
+    <a
+      href="#projects"
+      onClick={() => setOpen(false)}
+      className="px-6 py-4 text-base font-medium text-[#3b2a23] hover:bg-[#f3e8da] transition"
+    >
+      Projects
+    </a>
+
+    <a
+      href="#experience"
+      onClick={() => setOpen(false)}
+      className="px-6 py-4 text-base font-medium text-[#3b2a23] hover:bg-[#f3e8da] transition"
+    >
+      Experience
+    </a>
+
+  </div>
+)}
+
       </div>
     </nav>
   );
