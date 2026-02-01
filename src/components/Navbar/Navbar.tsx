@@ -45,8 +45,8 @@ const Navbar: React.FC = () => {
 
       {/* RIGHT */}
       <div className="flex items-center gap-3 relative">
-        <button className="px-4 py-2 rounded-full border border-[#7a5c4b] bg-white hover:bg-[#f3e8da] transition">
-          <p className="font-bold text-[#3b2f2f]">Contact Me</p>
+        <button className="px-4 py-2 cursor-pointer rounded-full border border-[#7a5c4b] bg-white hover:bg-[#f3e8da] transition">
+          <a href="#contactme" className="font-bold text-[#3b2f2f]">Contact Me</a>
         </button>
 
         {/* Mobile Menu Button */}
@@ -56,11 +56,11 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Dropdown */}
         {open && (
-          <div className="absolute right-0 top-12 w-40 bg-[#FAF1E3] rounded-xl shadow-lg flex flex-col overflow-hidden sm:hidden">
+          <div className="absolute right-0 top-12 w-40 bg-white rounded-xl shadow-lg flex flex-col overflow-hidden sm:hidden">
             <span>
               <a
                 href="#skills"
-                className="px-4 py-3 cursor-pointer hover:bg-black/5"
+                className="px-4 py-3 cursor-pointer text-[#6b5b5b] hover:bg-black/5"
               >
                 About Me
               </a>
@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
             <span>
               <a
                 href="#projects"
-                className="px-4 py-3 cursor-pointer hover:bg-black/5"
+                className="px-4 py-3 cursor-pointer text-[#6b5b5b] hover:bg-black/5"
               >
                 Projects
               </a>
@@ -77,7 +77,7 @@ const Navbar: React.FC = () => {
             <span>
               <a
                 href="#experience"
-                className="px-4 py-3 cursor-pointer hover:bg-black/5"
+                className="px-4 py-3 cursor-pointer text-[#6b5b5b] hover:bg-black/5"
               >
                 Experience
               </a>

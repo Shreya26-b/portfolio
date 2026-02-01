@@ -41,7 +41,7 @@ const ContactMe = () => {
 
 
   return (
-    <section className="bg-[#FAF1E3] py-24 px-6">
+    <section id="contactme" className="bg-[#FAF1E3] py-24 px-6">
       <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-16">
         {/* Left – Contact Form */}
         <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
