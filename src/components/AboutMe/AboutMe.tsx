@@ -5,7 +5,7 @@ import {
   FaCss3Alt,
   FaJs,
   FaBootstrap,
-  FaPython,
+  // FaPython,
   FaDatabase,
   FaGithub,
 } from "react-icons/fa";
@@ -13,10 +13,10 @@ import {
   SiTypescript,
   SiFastapi,
   SiMysql,
-  SiTensorflow,
-  SiKeras,
-  SiScikitlearn,
-  SiCplusplus,
+  // SiTensorflow,
+  // SiKeras,
+  // SiScikitlearn,
+  // SiCplusplus,
   SiNetlify,
   SiVercel,
   SiOpenai,
@@ -63,23 +63,23 @@ const AboutMe: React.FC = () => {
         </SkillCard>
 
         {/* Programming */}
-        <SkillCard title="Programming & CS Fundamentals">
+        {/* <SkillCard title="Programming & CS Fundamentals">
           <Skill icon={<SiCplusplus />} label="C / C++" />
           <Skill icon={<FaPython />} label="Python" />
           <Skill label="Data Structures" />
           <Skill label="Algorithms" />
           <Skill label="Databases" />
-        </SkillCard>
+        </SkillCard> */}
 
         {/* Machine Learning */}
-        <SkillCard title="Machine Learning">
+        {/* <SkillCard title="Machine Learning">
           <Skill icon={<SiTensorflow />} label="TensorFlow" />
           <Skill icon={<SiKeras />} label="Keras" />
           <Skill icon={<SiScikitlearn />} label="Scikit-learn" />
           <Skill label="Neural Networks" />
           <Skill label="Model Development" />
           <Skill label="Data Preprocessing" />
-        </SkillCard>
+        </SkillCard> */}
 
         {/* Deployment */}
         <SkillCard title="Deployment & Version Control">

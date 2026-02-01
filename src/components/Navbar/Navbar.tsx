@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
                 href="#skills"
                 className="px-4 py-3 cursor-pointer text-[#6b5b5b] hover:bg-black/5"
               >
-                About Me
+                Skills
               </a>
             </span>
             <span>
