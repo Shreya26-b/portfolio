@@ -37,9 +37,9 @@ const Experience: React.FC = () => {
             </p>
 
             <div className="space-y-2 text-sm text-[#5a4747] text-justify">
-              <p>➢ Resolved UI-impacting production issues by analyzing SQL / PL-SQL workflows, improving frontend reliability.</p>
-              <p>➢ Supported fixes for user-facing applications, enhancing stability, responsiveness, and UX.</p>
-              <p>➢ Collaborated in bug triage, root cause analysis, and UAT validation before releases.</p>
+              <p>➢ Built and enhanced a large-scale Banking Operations UI using React.js, Redux, and ES6+, delivering reusable, scalable component architecture.</p>
+              <p>➢ Improved state management and rendering performance, ensuring responsive, high-efficiency user workflows.</p>
+              <p>➢ Delivered production-ready releases with Jest testing, code reviews, and CI/CD (Blue-Green deployment) in an Agile environment.</p>
             </div>
           </div>
 
