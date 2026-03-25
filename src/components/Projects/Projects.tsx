@@ -1,11 +1,30 @@
 import React from "react";
 import netflix_clone from "../../assets/netflix_clone.jpg";
 import meditracker from "../../assets/medi_tracker.jpg";
+import shopsense from "../../assets/shopsense_frontpage.jpg";
 import todo_app from "../../assets/todo_app.jpg";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const Projects: React.FC = () => {
   const projects = [
+    {
+      title: "ShopSense",
+      image: shopsense,
+      liveUrl: "https://shopsense-frontend.vercel.app/",
+      githubUrl: "https://github.com/Shreya26-b/shopsense-frontend",
+      description:
+        "Understand your e-commerce store through data — without needing a data analyst.",
+      tech: [
+        "Next.js",
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "FAISS",
+        "Groq LLM",
+        "RAG chatbot",
+        "Recharts",
+      ],
+    },
     {
       title: "Meditracker",
       image: meditracker,
