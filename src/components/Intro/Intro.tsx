@@ -23,7 +23,7 @@ const Intro: React.FC = () => {
           </h1>
 
           <h2 className="text-xl md:text-2xl text-[#5a4747]">
-            Frontend Developer
+            Fullstack Developer
           </h2>
 
           <p className="text-[#6b5b5b] max-w-md">
